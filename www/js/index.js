@@ -21,18 +21,18 @@ var app = {
 
 		$(document).ready(function() {
 
-			// Setup the thumbnails
+			// Setup the thumbnails for the Available Works
 			// -------------------------------------------------------------
-			var availWorksParams = {
+			var availParams = {
 				alist : [ {
 					name: "kayapo",
-					img : "images/kayapo_767.jpg",
+					img : "images/kayapo/main.jpg",
 					title : "Kayapo Boy",
 					medium : 'Pastel on paper. 24"x36"',
 					soldTo : ""
 				}, {
 					name: "yanomami",
-					img : "images/yanomami_767.jpg",
+					img : "images/yanomami/main.jpg",
 					title : "Yanomami Girl",
 					medium : 'Pastel on paper. 24"x36"',
 					soldTo : ""
@@ -50,7 +50,38 @@ var app = {
 					soldTo : ""
 				}, ]
 			};
-			$("#available-works").html(app.thumbnailTpl(availWorksParams));
+			$("#available-works").html(app.thumbnailTpl(availParams));
+
+			// Setup the thumbnails for the Sold Works
+			// -------------------------------------------------------------
+			var soldParams = {
+				alist : [ {
+					name: "kayapo",
+					img : "images/kayapo/main.jpg",
+					title : "Kayapo Boy",
+					medium : 'Pastel on paper. 24"x36"',
+					soldTo : ""
+				}, {
+					name: "yanomami",
+					img : "images/yanomami/main.jpg",
+					title : "Yanomami Girl",
+					medium : 'Pastel on paper. 24"x36"',
+					soldTo : ""
+				}, {
+					name: "shiva",
+					img : "images/shiva_767.jpg",
+					title : "Shiva Child",
+					medium : 'Pastel on paper. 24"x36"',
+					soldTo : "sold to Michel Dufresne"
+				}, {
+					name: "sister2",
+					img : "images/little_sister2_767.jpg",
+					title : "Little Sister 2",
+					medium : 'Charcoal on paper. 24"x36"',
+					soldTo : ""
+				}, ]
+			};
+			$("#sold-works").html(app.thumbnailTpl(soldParams));
 			
 			// Setup the carousels
 			// -------------------------------------------------------------
@@ -60,26 +91,26 @@ var app = {
 			var yanomamiParams = {
 			    name : "yanomami",
 				caption : "Yanomami Girl",
-				mainImg : "images/yanomami_767.jpg",
+				mainImg : "images/yanomami/main.jpg",
 				alist : [ {
-					img : "images/yanomami_0_767.jpg",
+					img : "images/yanomami/details1.jpg",
 					alt : "Detail of Yanomami Girl"
 				}, {
-					img : "images/yanomami_1_767.jpg",
+					img : "images/yanomami/details2.jpg",
 					alt : "Detail of Yanomami Girl"
 				}, {
-					img : "images/yanomami_2_767.jpg",
+					img : "images/yanomami/details3.jpg",
 					alt : "Detail of Yanomami Girl"
 				}, {
-					img : "images/yanomami_3_767.jpg",
+					img : "images/yanomami/details4.jpg",
 					alt : "Detail of Yanomami Girl"
 				}, ]
 			};
-
 			$("#yanomami").html(app.carouselTpl(yanomamiParams));
 			$('#yanomami').on('slid.bs.carousel', function(e) {
 				lazyContainer(e);
 			});
+			
 			// -------------------------------------------------------------
 			// Kayapo carousel
 			// -------------------------------------------------------------
@@ -87,26 +118,27 @@ var app = {
 			var kayapoParams = {
 			    name : "kayapo",
 				caption : "Kayapo Boy",
-				mainImg : "images/kayapo_767.jpg",
+				mainImg : "images/kayapo/main.jpg",
 				alist : [ {
-					img : "images/kayapo_0_767.jpg",
+					img : "images/kayapo/details1.jpg",
 					alt : "Detail of Kayapo Boy"
 				}, {
-					img : "images/kayapo_1_767.jpg",
+					img : "images/kayapo/details2.jpg",
 					alt : "Detail of Kayapo Boy"
 				}, {
-					img : "images/kayapo_2_767.jpg",
+					img : "images/kayapo/details3.jpg",
 					alt : "Detail of Kayapo Boy"
 				}, {
-					img : "images/kayapo_3_720.jpg",
+					img : "images/kayapo/details4.jpg",
 					alt : "Detail of Kayapo Boy"
 				}, ]
 			};
-
 			$("#kayapo").html(app.carouselTpl(kayapoParams));
 			$('#kayapo').on('slid.bs.carousel', function(e) {
 				lazyContainer(e);
 			});
+			
+			
 		});
 
 		// Compile the templates
