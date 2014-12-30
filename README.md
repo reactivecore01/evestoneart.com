@@ -19,8 +19,6 @@
 - Setting up all photos for initial release
 
 ## User Stories Sprint Backlog
-- Refactoring index.html to use handlebar templates
-- Moving custom javascript into index.js
 - Adding social media links
 - fixing photo captions
   - Add artist name to each caption
@@ -64,7 +62,8 @@
     - 2 more sold works (TBD)
 
 ## Completed User Stories
-- Early prototype with Bootstrap and jQuery
+- Refactoring index.html to use handlebar templates
+- Moving custom javascript into index.js
 
 # Sprint 0: Seeding the project
 
