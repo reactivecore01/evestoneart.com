@@ -20,10 +20,9 @@
 
 ## User Stories Sprint Backlog
 - Adding social media links
-- fixing photo captions
-  - Add artist name to each caption
-  - Remove captions overlaying the photos in carousel (detail photos)
-  - Moving carousel title (art name) to footer, to look as a caption
+- Adding footer with copyrights
+
+## Completed User Stories
 - Sections and art works to show:
   - Available Works
     - Kayapo
@@ -43,25 +42,28 @@
     - Mother to Myself
       - Charcoal on Paper (24 x 36)
   - Works Sold
+    - White Tiger
+      - Pastel on Paper (18 x 24), sold to private collector
     - Ponies
       - Pastel on Paper (18 x 24), sold to Michel Dufresne
     - Cub
       - Pastel on Paper (18 x 24), sold to Katherine Garvey
     - Untitled (Lion)
-      - Pastel on Paper (18 x 24)
+      - Pastel on Paper (18 x 24), sold to Kristina Sheshaberidze 
     - Wolfe
       - Pastel on Paper (18 x 24), sold to private collector
     - The Yearlings, sketch (3 horses)
       - Charcoal on Paper (18 x 24), sold to Katherine Garvey
     - Horse Sketch
-      - Charcoal on Paper (18 x 24)
+      - Charcoal on Paper (18 x 24), sold to Stacy Ramos
     - Shiva Child
       - Pastel on Paper (24 x 36), sold to Michel Dufresne
     - Little Sister 2
-      - Charcoal on Paper (24 x 36)
-    - 2 more sold works (TBD)
-
-## Completed User Stories
+      - Charcoal on Paper (24 x 36), sold to Ramona Petrova
+- fixing photo captions
+  - Add artist name to each caption
+  - Remove captions overlaying the photos in carousel (detail photos)
+  - Moving carousel title (art name) to footer, to look as a caption
 - Refactoring index.html to use handlebar templates
 - Moving custom javascript into index.js
 
