@@ -21,6 +21,7 @@
 ## User Stories Sprint Backlog
 
 ## Completed User Stories
+- Build tag: evestoneart.com-v.0.2.0_12-31-2014
 - Deployed on AWS using http://www.evestoneart.com and http://evestoneart.com
 - Adding social media links
 - Adding footer with copyrights
