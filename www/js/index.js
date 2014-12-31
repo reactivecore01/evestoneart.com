@@ -123,7 +123,8 @@ var app = {
 						img : "images/horse_sketch/main.jpg",
 						title : "Horse Sketch",
 						medium : 'Charcoal on paper. 18"x24"',
-						soldTo : "sold to Stacy Ramos"
+						soldTo : "sold to Stacy Ramos",
+						clearfix : "true"
 					}, {
 						name: "yearlings",
 						img : "images/yearlings/main.jpg",

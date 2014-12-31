@@ -12,17 +12,18 @@
 - Version: 0.2.0.00
 - Start Date: 12/29/2014
 - Target Date: 12/31/2014
-- Actual Date: 12/XX/2014
+- Actual Date: 12/31/2014
 
 ## Product Features:
 - Using Handlebars for page templating
 - Setting up all photos for initial release
 
 ## User Stories Sprint Backlog
-- Adding social media links
-- Adding footer with copyrights
 
 ## Completed User Stories
+- Deployed on AWS using http://www.evestoneart.com and http://evestoneart.com
+- Adding social media links
+- Adding footer with copyrights
 - Sections and art works to show:
   - Available Works
     - Kayapo
