@@ -35,7 +35,8 @@ var app = {
 					img : "images/yanomami/main.jpg",
 					title : "Yanomami Girl",
 					medium : 'Pastel on paper. 24"x36"',
-					soldTo : ""
+					soldTo : "",
+				    clearfix : "clearfix visible-xs"
 				}, {
 					name: "nude",
 					img : "images/nude/main.jpg",
@@ -47,43 +48,80 @@ var app = {
 					img : "images/african_boy/main.jpg",
 					title : "African Boy With Turtle",
 					medium : 'Charcoal on paper. 24"x36"',
+					soldTo : "",
+				    clearfix : "clearfix visible-xs visible-sm visible-md visible-lg"
+				}, {
+					name: "sister1",
+					img : "images/sister1/main.jpg",
+					title : "Little Sister 1",
+					medium : 'Charcoal on paper. 24"x36"',
+					soldTo : ""
+				}, {
+					name: "african_girl",
+					img : "images/african_girl/main.jpg",
+					title : "African Girl",
+					medium : 'Charcoal on paper. 24"x36"',
+					soldTo : "",
+				    clearfix : "clearfix visible-xs"
+				}, {
+					name: "self_portrait",
+					img : "images/self_portrait/main.jpg",
+					title : "Self Portrait",
+					medium : 'Pastel on paper. 13 1/2"x16 3/4"',
+					soldTo : ""
+				}, {
+					name: "mother",
+					img : "images/mother/main.jpg",
+					title : "Mother To Myself",
+					medium : 'Charcoal on paper. 24"x36"',
 					soldTo : ""
 				}, ]
 			};
-			$("#available-works1").html(app.thumbnailTpl(params));
-			params = {
-					alist : [ {
-						name: "sister1",
-						img : "images/sister1/main.jpg",
-						title : "Little Sister 1",
-						medium : 'Charcoal on paper. 24"x36"',
-						soldTo : ""
-					}, {
-						name: "african_girl",
-						img : "images/african_girl/main.jpg",
-						title : "African Girl",
-						medium : 'Charcoal on paper. 24"x36"',
-						soldTo : ""
-					}, {
-						name: "self_portrait",
-						img : "images/self_portrait/main.jpg",
-						title : "Self Portrait",
-						medium : 'Pastel on paper. 13 1/2"x16 3/4"',
-						soldTo : ""
-					}, {
-						name: "mother",
-						img : "images/mother/main.jpg",
-						title : "Mother To Myself",
-						medium : 'Charcoal on paper. 24"x36"',
-						soldTo : ""
-					}, ]
-				};
-			$("#available-works2").html(app.thumbnailTpl(params));
+			$("#available-works").html(app.thumbnailTpl(params));
 
 			// Setup the thumbnails for the Sold Works
 			// -------------------------------------------------------------
 			params = {
 				alist : [ {
+					name: "shiva",
+					img : "images/shiva/main.jpg",
+					title : "Shiva Child",
+					medium : 'Pastel on paper. 24"x36"',
+					soldTo : "sold to Michel Dufresne"
+				}, {
+					name: "egyptian",
+					img : "images/egyptian/main.jpg",
+					title : "Egyptian Girl",
+					medium : 'Charcoal on paper. 24"x36"',
+					soldTo : "sold to Reshaunna and Mini Davidson",
+				    clearfix : "clearfix visible-xs"
+				}, {
+					name: "german",
+					img : "images/german/main.jpg",
+					title : "German Girl",
+					medium : 'Charcoal on paper. 24"x36"',
+					soldTo : "sold to Iris Voloshyna"
+				}, {
+					name: "sister2",
+					img : "images/sister2/main.jpg",
+					title : "Little Sister 2",
+					medium : 'Charcoal on paper. 24"x36"',
+					soldTo : "sold to Ramona Petrova",
+				    clearfix : "clearfix visible-xs visible-sm visible-md visible-lg"
+				}, {
+					name: "indian",
+					img : "images/indian/main.jpg",
+					title : "Indian Girl",
+					medium : 'Charcoal on paper. 24"x36"',
+					soldTo : "sold to Susan Hollenbeck"
+				}, {
+					name: "untitled2",
+					img : "images/untitled2/main.jpg",
+					title : "Untitled",
+					medium : 'Charcoal on paper. 24"x36"',
+					soldTo : "sold to Susan Hollenbeck",
+				    clearfix : "clearfix visible-xs"
+				}, {
 					name: "tiger",
 					img : "images/tiger/main.jpg",
 					title : "White Tiger",
@@ -95,7 +133,7 @@ var app = {
 					title : "Ponies",
 					medium : 'Pastel on paper. 18"x24"',
 					soldTo : "sold to Michel Dufresne",
-					clearfix : "true"
+				    clearfix : "clearfix visible-xs visible-sm visible-md visible-lg"
 				}, {
 					name: "cub",
 					img : "images/cub/main.jpg",
@@ -107,49 +145,30 @@ var app = {
 					img : "images/untitled/main.jpg",
 					title : "Untitled",
 					medium : 'Pastel on paper. 18"x24"',
-					soldTo : "sold to Kristina Sheshaberidze"
+					soldTo : "sold to Kristina Sheshaberidze",
+				    clearfix : "clearfix visible-xs"
+				}, {
+					name: "wolfe",
+					img : "images/wolfe/main.jpg",
+					title : "Wolf",
+					medium : 'Pastel on paper. 18"x24"',
+					soldTo : "sold to private collector"
+				}, {
+					name: "horse_sketch",
+					img : "images/horse_sketch/main.jpg",
+					title : "Horse Sketch",
+					medium : 'Charcoal on paper. 18"x24"',
+					soldTo : "sold to Stacy Ramos",
+					clearfix : "clearfix visible-xs visible-sm visible-md visible-lg"
+				}, {
+					name: "yearlings",
+					img : "images/yearlings/main.jpg",
+					title : "The Yearlings",
+					medium : 'Charcoal sketch on paper. 18"x24"',
+					soldTo : "sold to Katherine Garvey"
 				}, ]
 			};
-			$("#sold-works1").html(app.thumbnailTpl(params));
-			params = {
-					alist : [ {
-						name: "wolfe",
-						img : "images/wolfe/main.jpg",
-						title : "Wolfe",
-						medium : 'Pastel on paper. 18"x24"',
-						soldTo : "sold to private collector"
-					}, {
-						name: "horse_sketch",
-						img : "images/horse_sketch/main.jpg",
-						title : "Horse Sketch",
-						medium : 'Charcoal on paper. 18"x24"',
-						soldTo : "sold to Stacy Ramos",
-						clearfix : "true"
-					}, {
-						name: "yearlings",
-						img : "images/yearlings/main.jpg",
-						title : "The Yearlings",
-						medium : 'Charcoal sketch on paper. 18"x24"',
-						soldTo : "sold to Katherine Garvey"
-					}, {
-						name: "shiva",
-						img : "images/shiva/main.jpg",
-						title : "Shiva Child",
-						medium : 'Pastel on paper. 24"x36"',
-						soldTo : "sold to Michel Dufresne"
-					}, ]
-				};
-			$("#sold-works2").html(app.thumbnailTpl(params));
-			params = {
-					alist : [ {
-						name: "sister2",
-						img : "images/sister2/main.jpg",
-						title : "Little Sister 2",
-						medium : 'Charcoal on paper. 24"x36"',
-						soldTo : "sold to Ramona Petrova"
-					}, ]
-				};
-			$("#sold-works3").html(app.thumbnailTpl(params));
+			$("#sold-works").html(app.thumbnailTpl(params));
 			
 			// Setup the carousels
 			// -------------------------------------------------------------
@@ -198,6 +217,21 @@ var app = {
 					alt : "Detail of Kayapo Boy"
 				}, {
 					img : "images/kayapo/details4.jpg",
+					alt : "Detail of Kayapo Boy"
+				}, {
+					img : "images/kayapo/details5.jpg",
+					alt : "Detail of Kayapo Boy"
+				}, {
+					img : "images/kayapo/details6.jpg",
+					alt : "Detail of Kayapo Boy"
+				}, {
+					img : "images/kayapo/details7.jpg",
+					alt : "Detail of Kayapo Boy"
+				}, {
+					img : "images/kayapo/details8.jpg",
+					alt : "Detail of Kayapo Boy"
+				}, {
+					img : "images/kayapo/details9.jpg",
 					alt : "Detail of Kayapo Boy"
 				}, ]
 			};
@@ -483,23 +517,23 @@ var app = {
 			// -------------------------------------------------------------
 			params = {
 			    name : "wolfe",
-				caption : "Wolfe",
+				caption : "Wolf",
 				mainImg : "images/wolfe/main.jpg",
 				alist : [ {
 					img : "images/wolfe/details1.jpg",
-					alt : "Detail of Wolfe"
+					alt : "Detail of Wolf"
 				}, {
 					img : "images/wolfe/details2.jpg",
-					alt : "Detail of Wolfe"
+					alt : "Detail of Wolf"
 				}, {
 					img : "images/wolfe/details3.jpg",
-					alt : "Detail of Wolfe"
+					alt : "Detail of Wolf"
 				}, {
 					img : "images/wolfe/details4.jpg",
-					alt : "Detail of Wolfe"
+					alt : "Detail of Wolf"
 				}, {
 					img : "images/wolfe/details5.jpg",
-					alt : "Detail of Wolfe"
+					alt : "Detail of Wolf"
 				}, ]
 			};
 			$("#wolfe").html(app.carouselTpl(params));
@@ -623,6 +657,89 @@ var app = {
 			};
 			$("#sister2").html(app.carouselTpl(params));
 			$('#sister2').on('slid.bs.carousel', function(e) {
+				lazyContainer(e);
+			});
+			
+			// -------------------------------------------------------------
+			// egyptian carousel
+			// -------------------------------------------------------------
+			params = {
+			    name : "egyptian",
+				caption : "Egyptian Girl",
+				mainImg : "images/egyptian/main.jpg",
+				alist : [ {
+					img : "images/egyptian/details1.jpg",
+					alt : "Detail of Egyptian Girl"
+				}, {
+					img : "images/egyptian/details2.jpg",
+					alt : "Detail of Egyptian Girl"
+				}, {
+					img : "images/egyptian/details3.jpg",
+					alt : "Detail of Egyptian Girl"
+				}, {
+					img : "images/egyptian/details4.jpg",
+					alt : "Detail of Egyptian Girl"
+				}, {
+					img : "images/egyptian/details5.jpg",
+					alt : "Detail of Egyptian Girl"
+				}, ]
+			};
+			$("#egyptian").html(app.carouselTpl(params));
+			$('#egyptian').on('slid.bs.carousel', function(e) {
+				lazyContainer(e);
+			});
+			
+			// -------------------------------------------------------------
+			// german carousel
+			// -------------------------------------------------------------
+			params = {
+			    name : "german",
+				caption : "German Girl",
+				mainImg : "images/german/main.jpg",
+				alist : [ {
+					img : "images/german/details1.jpg",
+					alt : "Detail of German Girl"
+				}, {
+					img : "images/german/details2.jpg",
+					alt : "Detail of German Girl"
+				}, {
+					img : "images/german/details3.jpg",
+					alt : "Detail of German Girl"
+				}, {
+					img : "images/german/details4.jpg",
+					alt : "Detail of German Girl"
+				}, ]
+			};
+			$("#german").html(app.carouselTpl(params));
+			$('#german').on('slid.bs.carousel', function(e) {
+				lazyContainer(e);
+			});
+			
+			// -------------------------------------------------------------
+			// indian carousel
+			// -------------------------------------------------------------
+			params = {
+			    name : "indian",
+				caption : "Indian Girl",
+				mainImg : "images/indian/main.jpg",
+				alist : [ ]
+			};
+			$("#indian").html(app.carouselTpl(params));
+			$('#indian').on('slid.bs.carousel', function(e) {
+				lazyContainer(e);
+			});
+			
+			// -------------------------------------------------------------
+			// untitled2 carousel
+			// -------------------------------------------------------------
+			params = {
+			    name : "indian",
+				caption : "Untitled",
+				mainImg : "images/untitled2/main.jpg",
+				alist : [ ]
+			};
+			$("#untitled2").html(app.carouselTpl(params));
+			$('#untitled2').on('slid.bs.carousel', function(e) {
 				lazyContainer(e);
 			});
 			

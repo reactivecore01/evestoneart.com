@@ -7,6 +7,30 @@
 
 ######################################################################################################
 
+# Sprint 2: Adding new arts and details to existing
+
+- Version: 0.3.0.00
+- Start Date: 01/02/2015
+- Target Date: 01/03/2015
+- Actual Date: 01/03/2015
+
+## Product Features:
+- Made changes based on Eve's comments
+
+## User Stories Sprint Backlog
+
+## Completed User Stories
+- Build tag: evestoneart.com-v.0.3.0_01-03-2015
+- Added 5 details to Kayapo
+- Added Egyptian girl, charcoal on paper, 24"x36", Eve Stone, sold to Iris Voloshyna
+- Added German girl, charcoal on paper 24"x 36", eve stone, sold to Reshaunna and Mini Davidson
+- Indian girl, charcoal on paper, 24"x 36", Eve Stone, sold to Susan Hollenbeck
+- Untitled, charcoal on paper, 24"x36", Eve stone, sold to Susan Hollenbeck (untitled2)
+- Added text for thank you section
+- Added  photos and website done by Michel Dufresne.  After thank you section
+- Changed to bootswatch/3.3.1/readable theme
+
+
 # Sprint 1: Using Handlebars for page templating
 
 - Version: 0.2.0.00
