@@ -7,6 +7,25 @@
 
 ######################################################################################################
 
+# Sprint 3: Adding Google Analytics
+
+- Version: 0.4.0.00
+- Start Date: 01/03/2015
+- Target Date: 01/03/2015
+- Actual Date: 01/03/2015
+
+## Product Features:
+- Adding Google Analytics Account
+
+## User Stories Sprint Backlog
+
+## Completed User Stories
+- Build tag: evestoneart.com-v.0.4.0_01-03-2015
+- Added Google Analytics Account for site view tracking
+    - Tracking ID: UA-58182105-1
+
+
+
 # Sprint 2: Adding new arts and details to existing
 
 - Version: 0.3.0.00
