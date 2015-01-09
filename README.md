@@ -7,6 +7,23 @@
 
 ######################################################################################################
 
+# Sprint 5: Ongoing corrections
+
+- Version: 0.6.0.00
+- Start Date: 01/09/2015
+- Target Date: 01/XX/2015
+- Actual Date: 01/XX/2015
+
+## Product Features:
+- Ongoing corrections
+
+## User Stories Sprint Backlog
+
+## Completed User Stories
+- Change Eve Stone Art in main banner in all caps (EVE STONE ART)
+- Correction, section title: Works Sold
+
+
 # Sprint 4: New Font for Name in Banner
 
 - Version: 0.5.0.00
