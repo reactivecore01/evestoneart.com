@@ -93,14 +93,14 @@ var app = {
 					img : "images/egyptian/main.jpg",
 					title : "Egyptian Girl",
 					medium : 'Charcoal on paper. 24"x36"',
-					soldTo : "sold to Reshaunna and Mini Davidson",
+					soldTo : "sold to Iris Voloshyna",
 				    clearfix : "clearfix visible-xs"
 				}, {
 					name: "german",
 					img : "images/german/main.jpg",
 					title : "German Girl",
 					medium : 'Charcoal on paper. 24"x36"',
-					soldTo : "sold to Iris Voloshyna"
+					soldTo : "sold to Reshaunna and Mini Davidson"
 				}, {
 					name: "sister2",
 					img : "images/sister2/main.jpg",

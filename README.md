@@ -7,6 +7,28 @@
 
 ######################################################################################################
 
+# Sprint 4: New Font for Name in Banner
+
+- Version: 0.5.0.00
+- Start Date: 01/08/2015
+- Target Date: 01/08/2015
+- Actual Date: 01/08/2015
+
+## Product Features:
+- Adding a using a image for the name of Eve Stone Art using Aver Bold font
+
+## User Stories Sprint Backlog
+
+## Completed User Stories
+- Build tag: evestoneart.com-v.0.5.0_01-08-2015
+- Adding a using a image for the name of Eve Stone Art using Aver Bold font
+- Fix spelling of Erika Gangeau
+- Hiding the facebook link
+- Removing 'Art' from Copyright notice.
+- Corrected: German girl, sold to Reshaunna and Mini Davidson
+- Corrected: Egyptian Girl, sold to Iris Voloshyna
+- Changed the caption of Eve's photo to: The Artist Eve Stone in her home surrounded by her art.
+
 # Sprint 3: Adding Google Analytics
 
 - Version: 0.4.0.00
