@@ -93,7 +93,7 @@ var app = {
 					img : "images/egyptian/main.jpg",
 					title : "Egyptian Girl",
 					medium : 'Charcoal on paper. 24"x36"',
-					soldTo : "sold to Iris Voloshyna",
+					soldTo : "sold to Iryna Voloshyna",
 				    clearfix : "clearfix visible-xs"
 				}, {
 					name: "german",

@@ -20,6 +20,8 @@
 ## User Stories Sprint Backlog
 
 ## Completed User Stories
+- Added instructions to click on photos: Click on photos to enlarge and view details.  Press arrows to see next detail.
+- Fix typo in name, changed Iris to Iryna
 - Change Eve Stone Art in main banner in all caps (EVE STONE ART)
 - Correction, section title: Works Sold
 
