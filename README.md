@@ -9,7 +9,7 @@
 
 # Sprint 5: Ongoing corrections
 
-- Version: 0.6.0 (v.0.6_01-24-2015)
+- Version: 0.6.0 (v.0.6.0_01-24-2015)
 - Start Date: 01/09/2015
 - Target Date: 01/24/2015
 - Actual Date: 01/24/2015
@@ -21,7 +21,8 @@
 
 ## Completed User Stories
 - Build tag: evestoneart.com-v.0.6.0_01-24-2015
-- Added Springboks and Mare ans Foal artwork.
+- Repaced Kayapo details #4 (beeds bracelet)
+- Added Springboks and Mare and Foal artwork.
 - Added a close button on the details window to make it easire to close.
 - Change the orientation of Sister 1
 - Change the order of the sold sketches.
