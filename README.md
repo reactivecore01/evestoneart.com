@@ -9,10 +9,10 @@
 
 # Sprint 5: Ongoing corrections
 
-- Version: 0.6.0.00
+- Version: 0.6.0 (v.0.6_01-24-2015)
 - Start Date: 01/09/2015
-- Target Date: 01/XX/2015
-- Actual Date: 01/XX/2015
+- Target Date: 01/24/2015
+- Actual Date: 01/24/2015
 
 ## Product Features:
 - Ongoing corrections
@@ -20,6 +20,11 @@
 ## User Stories Sprint Backlog
 
 ## Completed User Stories
+- Build tag: evestoneart.com-v.0.6.0_01-24-2015
+- Added Springboks and Mare ans Foal artwork.
+- Added a close button on the details window to make it easire to close.
+- Change the orientation of Sister 1
+- Change the order of the sold sketches.
 - Added instructions to click on photos: Click on photos to enlarge and view details.  Press arrows to see next detail.
 - Fix typo in name, changed Iris to Iryna
 - Change Eve Stone Art in main banner in all caps (EVE STONE ART)

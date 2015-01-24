@@ -122,18 +122,31 @@ var app = {
 					soldTo : "sold to Susan Hollenbeck",
 				    clearfix : "clearfix visible-xs"
 				}, {
-					name: "tiger",
-					img : "images/tiger/main.jpg",
-					title : "White Tiger",
-					medium : 'Pastel on paper. 18"x24"',
-					soldTo : "sold to private collector"
-				}, {
 					name: "ponies",
 					img : "images/ponies/main.jpg",
 					title : "Ponies",
 					medium : 'Pastel on paper. 18"x24"',
 					soldTo : "sold to Michel Dufresne",
+				}, {
+					name: "mare",
+					img : "images/mare/main.jpg",
+					title : "Mare and Foal",
+					medium : 'Pastel on paper. 18"x24"',
+					soldTo : "sold to Private Collector",
 				    clearfix : "clearfix visible-xs visible-sm visible-md visible-lg"
+				}, {
+					name: "untitled",
+					img : "images/untitled/main.jpg",
+					title : "Untitled",
+					medium : 'Pastel on paper. 18"x24"',
+					soldTo : "sold to Kristina Sheshaberidze",
+				}, {
+					name: "springboks",
+					img : "images/springboks/main.jpg",
+					title : "Springboks",
+					medium : 'Pastel on paper. 18"x24"',
+					soldTo : "sold to Private Collector",
+				    clearfix : "clearfix visible-xs"
 				}, {
 					name: "cub",
 					img : "images/cub/main.jpg",
@@ -141,12 +154,12 @@ var app = {
 					medium : 'Pastel on paper. 18"x24"',
 					soldTo : "sold to Katherine Garvey"
 				}, {
-					name: "untitled",
-					img : "images/untitled/main.jpg",
-					title : "Untitled",
+					name: "tiger",
+					img : "images/tiger/main.jpg",
+					title : "White Tiger",
 					medium : 'Pastel on paper. 18"x24"',
-					soldTo : "sold to Kristina Sheshaberidze",
-				    clearfix : "clearfix visible-xs"
+					soldTo : "sold to private collector",
+				    clearfix : "clearfix visible-xs visible-sm visible-md visible-lg"
 				}, {
 					name: "wolfe",
 					img : "images/wolfe/main.jpg",
@@ -159,7 +172,7 @@ var app = {
 					title : "Horse Sketch",
 					medium : 'Charcoal on paper. 18"x24"',
 					soldTo : "sold to Stacy Ramos",
-					clearfix : "clearfix visible-xs visible-sm visible-md visible-lg"
+				    clearfix : "clearfix visible-xs"
 				}, {
 					name: "yearlings",
 					img : "images/yearlings/main.jpg",
@@ -450,10 +463,60 @@ var app = {
 				}, {
 					img : "images/ponies/details5.jpg",
 					alt : "Detail of Ponies"
+				}, {
+					img : "images/ponies/details6.jpg",
+					alt : "Detail of Ponies"
+				}, {
+					img : "images/ponies/details7.jpg",
+					alt : "Detail of Ponies"
 				}, ]
 			};
 			$("#ponies").html(app.carouselTpl(params));
 			$('#ponies').on('slid.bs.carousel', function(e) {
+				lazyContainer(e);
+			});
+			
+			// -------------------------------------------------------------
+			// mare carousel
+			// -------------------------------------------------------------
+			params = {
+			    name : "mare",
+				caption : "Mare and Foal",
+				mainImg : "images/mare/main.jpg",
+				alist : [ {
+					img : "images/mare/details1.jpg",
+					alt : "Detail of Mare and Foal"
+				}, {
+					img : "images/mare/details2.jpg",
+					alt : "Detail of Mare and Foal"
+				}, {
+					img : "images/mare/details3.jpg",
+					alt : "Detail of Mare and Foal"
+				}, {
+					img : "images/mare/details4.jpg",
+					alt : "Detail of Mare and Foal"
+				}, {
+					img : "images/mare/details5.jpg",
+					alt : "Detail of Mare and Foal"
+				}, {
+					img : "images/mare/details6.jpg",
+					alt : "Detail of Mare and Foal"
+				}, {
+					img : "images/mare/details7.jpg",
+					alt : "Detail of Mare and Foal"
+				}, {
+					img : "images/mare/details8.jpg",
+					alt : "Detail of Mare and Foal"
+				}, {
+					img : "images/mare/details9.jpg",
+					alt : "Detail of Mare and Foal"
+				}, {
+					img : "images/mare/details10.jpg",
+					alt : "Detail of Mare and Foal"
+				}, ]
+			};
+			$("#mare").html(app.carouselTpl(params));
+			$('#mare').on('slid.bs.carousel', function(e) {
 				lazyContainer(e);
 			});
 			
@@ -509,6 +572,47 @@ var app = {
 			};
 			$("#untitled").html(app.carouselTpl(params));
 			$('#untitled').on('slid.bs.carousel', function(e) {
+				lazyContainer(e);
+			});
+			
+			// -------------------------------------------------------------
+			// springboks carousel
+			// -------------------------------------------------------------
+			params = {
+			    name : "springboks",
+				caption : "Springboks",
+				mainImg : "images/springboks/main.jpg",
+				alist : [ {
+					img : "images/springboks/details1.jpg",
+					alt : "Detail of Springboks"
+				}, {
+					img : "images/springboks/details2.jpg",
+					alt : "Detail of Springboks"
+				}, {
+					img : "images/springboks/details3.jpg",
+					alt : "Detail of Springboks"
+				}, {
+					img : "images/springboks/details4.jpg",
+					alt : "Detail of Springboks"
+				}, {
+					img : "images/springboks/details5.jpg",
+					alt : "Detail of Springboks"
+				}, {
+					img : "images/springboks/details6.jpg",
+					alt : "Detail of Springboks"
+				}, {
+					img : "images/springboks/details7.jpg",
+					alt : "Detail of Springboks"
+				}, {
+					img : "images/springboks/details8.jpg",
+					alt : "Detail of Springboks"
+				}, {
+					img : "images/springboks/details9.jpg",
+					alt : "Detail of Springboks"
+				}, ]
+			};
+			$("#springboks").html(app.carouselTpl(params));
+			$('#springboks').on('slid.bs.carousel', function(e) {
 				lazyContainer(e);
 			});
 			
