@@ -178,7 +178,7 @@ var app = {
 					img : "images/yearlings/main.jpg",
 					title : "The Yearlings",
 					medium : 'Charcoal sketch on paper. 18"x24"',
-					soldTo : "sold to Katherine Garvey"
+					soldTo : "sold to Elizabeth Bristol"
 				}, ]
 			};
 			$("#sold-works").html(app.thumbnailTpl(params));

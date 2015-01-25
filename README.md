@@ -7,6 +7,21 @@
 
 ######################################################################################################
 
+# Sprint 6: Ongoing corrections
+
+- Version: 0.7.0 (v.0.7.0_01-31-2015)
+- Start Date: 01/24/2015
+- Target Date: 01/31/2015
+- Actual Date: 01/31/2015
+
+## Product Features:
+- Ongoing corrections
+
+## User Stories Sprint Backlog
+
+## Completed User Stories
+- Corrected purchaser's name for Yearlings: Elizabeth Bristol
+
 # Sprint 5: Ongoing corrections
 
 - Version: 0.6.0 (v.0.6.0_01-24-2015)
