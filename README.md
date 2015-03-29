@@ -3,9 +3,32 @@
 > This responsive website is using Bootstrap, jQuery and Handlebars libraries
 
 # Product backlog
-- Add Google analytics for traffic tracking
 
+<!--
 ######################################################################################################
+-->
+
+# Sprint 8: Added new Works
+
+- Version: 0.8.0 (v.0.8.0_03-29-2015)
+- Start Date: 01/24/2015
+- Target Date: 01/31/2015
+- Actual Date: 01/31/2015
+
+## Product Features:
+- Add Caracals and Homecoming
+- Add Google Analytics
+- Put some work in horizontal layout
+
+## User Stories Sprint Backlog
+
+## Completed User Stories
+- Commit Label: v.0.8.0_03-29-2015 (skipped Sprint 7 to harmonized the labels with the Sprint number)
+- Add Caracals and Homecoming
+- Add Google Analytics
+- Sold Self Portrait
+- Put some work in horizontal layout
+- Added Google analytics for traffic tracking
 
 # Sprint 6: Ongoing corrections
 

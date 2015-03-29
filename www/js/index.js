@@ -55,20 +55,15 @@ var app = {
 					img : "images/sister1/main.jpg",
 					title : "Little Sister 1",
 					medium : 'Charcoal on paper. 24"x36"',
-					soldTo : ""
+					soldTo : "",
+					horizontal: "true",
+				    clearfix : "clearfix visible-xs"
 				}, {
 					name: "african_girl",
 					img : "images/african_girl/main.jpg",
 					title : "African Girl",
 					medium : 'Charcoal on paper. 24"x36"',
 					soldTo : "",
-				    clearfix : "clearfix visible-xs"
-				}, {
-					name: "self_portrait",
-					img : "images/self_portrait/main.jpg",
-					title : "Self Portrait",
-					medium : 'Pastel on paper. 13 1/2"x16 3/4"',
-					soldTo : ""
 				}, {
 					name: "mother",
 					img : "images/mother/main.jpg",
@@ -109,6 +104,14 @@ var app = {
 					soldTo : "sold to Ramona Petrova",
 				    clearfix : "clearfix visible-xs visible-sm visible-md visible-lg"
 				}, {
+					name: "homecoming",
+					img : "images/homecoming/main.jpg",
+					title : "Homecoming",
+					medium : 'Pastel on paper. 18"x24"',
+					soldTo : "sold to Reshaunna Davidson",
+					horizontal: "true",
+				    clearfix : "clearfix visible-xs"
+				}, {
 					name: "indian",
 					img : "images/indian/main.jpg",
 					title : "Indian Girl",
@@ -120,65 +123,78 @@ var app = {
 					title : "Untitled",
 					medium : 'Charcoal on paper. 24"x36"',
 					soldTo : "sold to Susan Hollenbeck",
-				    clearfix : "clearfix visible-xs"
+				    clearfix : "clearfix visible-xs visible-sm visible-md visible-lg"
+				}, {
+					name: "self_portrait",
+					img : "images/self_portrait/main.jpg",
+					title : "Self Portrait",
+					medium : 'Pastel on paper. 13 1/2"x16 3/4"',
+					soldTo : "sold to Theadora Woodside"
 				}, {
 					name: "ponies",
 					img : "images/ponies/main.jpg",
 					title : "Ponies",
 					medium : 'Pastel on paper. 18"x24"',
 					soldTo : "sold to Michel Dufresne",
+				    clearfix : "clearfix visible-xs"
 				}, {
 					name: "mare",
 					img : "images/mare/main.jpg",
 					title : "Mare and Foal",
 					medium : 'Pastel on paper. 18"x24"',
-					soldTo : "sold to Private Collector",
-				    clearfix : "clearfix visible-xs visible-sm visible-md visible-lg"
+					soldTo : "sold to Private Collector"
 				}, {
 					name: "untitled",
 					img : "images/untitled/main.jpg",
 					title : "Untitled",
 					medium : 'Pastel on paper. 18"x24"',
 					soldTo : "sold to Kristina Sheshaberidze",
+				    clearfix : "clearfix visible-xs visible-sm visible-md visible-lg"
 				}, {
 					name: "springboks",
 					img : "images/springboks/main.jpg",
 					title : "Springboks",
 					medium : 'Pastel on paper. 18"x24"',
 					soldTo : "sold to Private Collector",
-				    clearfix : "clearfix visible-xs"
 				}, {
 					name: "cub",
 					img : "images/cub/main.jpg",
 					title : "Cub",
 					medium : 'Pastel on paper. 18"x24"',
-					soldTo : "sold to Katherine Garvey"
+					soldTo : "sold to Katherine Garvey",
+				    clearfix : "clearfix visible-xs"
 				}, {
 					name: "tiger",
 					img : "images/tiger/main.jpg",
 					title : "White Tiger",
 					medium : 'Pastel on paper. 18"x24"',
 					soldTo : "sold to private collector",
-				    clearfix : "clearfix visible-xs visible-sm visible-md visible-lg"
 				}, {
 					name: "wolfe",
 					img : "images/wolfe/main.jpg",
 					title : "Wolf",
 					medium : 'Pastel on paper. 18"x24"',
-					soldTo : "sold to private collector"
+					soldTo : "sold to private collector",
+				    clearfix : "clearfix visible-xs visible-sm visible-md visible-lg"
 				}, {
 					name: "horse_sketch",
 					img : "images/horse_sketch/main.jpg",
 					title : "Horse Sketch",
 					medium : 'Charcoal on paper. 18"x24"',
 					soldTo : "sold to Stacy Ramos",
-				    clearfix : "clearfix visible-xs"
 				}, {
 					name: "yearlings",
 					img : "images/yearlings/main.jpg",
 					title : "The Yearlings",
 					medium : 'Charcoal sketch on paper. 18"x24"',
-					soldTo : "sold to Elizabeth Bristol"
+					soldTo : "sold to Elizabeth Bristol",
+				    clearfix : "clearfix visible-xs"
+				}, {
+					name: "caracals",
+					img : "images/caracals/main.jpg",
+					title : "Caracals",
+					medium : 'Pastel on paper. 18"x24"',
+					soldTo : "sold to Brock Seiler"
 				}, ]
 			};
 			$("#sold-works").html(app.thumbnailTpl(params));
@@ -323,9 +339,6 @@ var app = {
 					alt : "Detail of Little Sister 1"
 				}, {
 					img : "images/sister1/details5.jpg",
-					alt : "Detail of Little Sister 1"
-				}, {
-					img : "images/sister1/details6.jpg",
 					alt : "Detail of Little Sister 1"
 				}, ]
 			};
@@ -844,6 +857,85 @@ var app = {
 			};
 			$("#untitled2").html(app.carouselTpl(params));
 			$('#untitled2').on('slid.bs.carousel', function(e) {
+				lazyContainer(e);
+			});
+			
+			// -------------------------------------------------------------
+			// Caracals carousel
+			// -------------------------------------------------------------
+			params = {
+			    name : "caracals",
+				caption : "Caracals",
+				mainImg : "images/caracals/main.jpg",
+				alist : [ {
+					img : "images/caracals/details1.jpg",
+					alt : "Detail of Caracals"
+				}, {
+					img : "images/caracals/details2.jpg",
+					alt : "Detail of Caracals"
+				}, {
+					img : "images/caracals/details3.jpg",
+					alt : "Detail of Caracals"
+				}, {
+					img : "images/caracals/details4.jpg",
+					alt : "Detail of Caracals"
+				}, {
+					img : "images/caracals/details5.jpg",
+					alt : "Detail of Caracals"
+				}, {
+					img : "images/caracals/details6.jpg",
+					alt : "Detail of Caracals"
+				}, {
+					img : "images/caracals/details7.jpg",
+					alt : "Detail of Caracals"
+				}, ]
+			};
+			$("#caracals").html(app.carouselTpl(params));
+			$('#caracals').on('slid.bs.carousel', function(e) {
+				lazyContainer(e);
+			});
+			
+			// -------------------------------------------------------------
+			// Homecoming carousel
+			// -------------------------------------------------------------
+			params = {
+			    name : "homecoming",
+				caption : "Homecoming",
+				mainImg : "images/homecoming/main.jpg",
+				alist : [ {
+					img : "images/homecoming/details1.jpg",
+					alt : "Detail of Homecoming"
+				}, {
+					img : "images/homecoming/details2.jpg",
+					alt : "Detail of Homecoming"
+				}, {
+					img : "images/homecoming/details3.jpg",
+					alt : "Detail of Homecoming"
+				}, {
+					img : "images/homecoming/details4.jpg",
+					alt : "Detail of Homecoming"
+				}, {
+					img : "images/homecoming/details5.jpg",
+					alt : "Detail of Homecoming"
+				}, {
+					img : "images/homecoming/details6.jpg",
+					alt : "Detail of Homecoming"
+				}, {
+					img : "images/homecoming/details7.jpg",
+					alt : "Detail of Homecoming"
+				}, {
+					img : "images/homecoming/details8.jpg",
+					alt : "Detail of Homecoming"
+				}, {
+					img : "images/homecoming/details9.jpg",
+					alt : "Detail of Homecoming"
+				}, {
+					img : "images/homecoming/details10.jpg",
+					alt : "Detail of Homecoming"
+				}, ]
+			};
+			$("#homecoming").html(app.carouselTpl(params));
+			$('#homecoming').on('slid.bs.carousel', function(e) {
 				lazyContainer(e);
 			});
 			
