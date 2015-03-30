@@ -107,7 +107,7 @@ var app = {
 					name: "homecoming",
 					img : "images/homecoming/main.jpg",
 					title : "Homecoming",
-					medium : 'Pastel on paper. 18"x24"',
+					medium : 'Pastel on paper. 24"x36"',
 					soldTo : "sold to Reshaunna Davidson",
 					horizontal: "true",
 				    clearfix : "clearfix visible-xs"
