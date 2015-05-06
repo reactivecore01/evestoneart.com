@@ -25,31 +25,43 @@ var app = {
 			// -------------------------------------------------------------
 			var params = {
 				alist : [ {
+					name: "prodigy",
+					img : "images/prodigy/main.jpg",
+					title : "Prodigy Moments After",
+					medium : 'Pastel on paper. 24"x36"',
+					soldTo : ""
+				}, {
 					name: "kayapo",
 					img : "images/kayapo/main.jpg",
 					title : "Kayapo Boy",
 					medium : 'Pastel on paper. 24"x36"',
-					soldTo : ""
+					soldTo : "",
+				    clearfix : "clearfix visible-xs"
 				}, {
 					name: "yanomami",
 					img : "images/yanomami/main.jpg",
 					title : "Yanomami Girl",
 					medium : 'Pastel on paper. 24"x36"',
-					soldTo : "",
-				    clearfix : "clearfix visible-xs"
+					soldTo : ""
 				}, {
 					name: "nude",
 					img : "images/nude/main.jpg",
 					title : "Nude",
 					medium : 'Charcoal on paper. 24"x36"',
-					soldTo : ""
+					soldTo : "",
+				    clearfix : "clearfix visible-xs visible-sm visible-md visible-lg"
 				}, {
 					name: "african_boy",
 					img : "images/african_boy/main.jpg",
 					title : "African Boy With Turtle",
 					medium : 'Charcoal on paper. 24"x36"',
+					soldTo : ""
+				}, {
+					name: "african_girl",
+					img : "images/african_girl/main.jpg",
+					title : "African Girl",
+					medium : 'Charcoal on paper. 24"x36"',
 					soldTo : "",
-				    clearfix : "clearfix visible-xs visible-sm visible-md visible-lg"
 				}, {
 					name: "sister1",
 					img : "images/sister1/main.jpg",
@@ -57,13 +69,7 @@ var app = {
 					medium : 'Charcoal on paper. 24"x36"',
 					soldTo : "",
 					horizontal: "true",
-				    clearfix : "clearfix visible-xs"
-				}, {
-					name: "african_girl",
-					img : "images/african_girl/main.jpg",
-					title : "African Girl",
-					medium : 'Charcoal on paper. 24"x36"',
-					soldTo : "",
+				    clearfix : "clearfix visible-xs visible-sm visible-md visible-lg"
 				}, {
 					name: "mother",
 					img : "images/mother/main.jpg",
@@ -190,6 +196,13 @@ var app = {
 					soldTo : "sold to Elizabeth Bristol",
 				    clearfix : "clearfix visible-xs"
 				}, {
+					name: "turtle",
+					img : "images/turtle/main.jpg",
+					title : "Turtle",
+					medium : 'Pastel on paper. 18"x24"',
+					horizontal: "true",
+					soldTo : "sold to Private Collector"
+				}, {
 					name: "caracals",
 					img : "images/caracals/main.jpg",
 					title : "Caracals",
@@ -200,6 +213,57 @@ var app = {
 			$("#sold-works").html(app.thumbnailTpl(params));
 			
 			// Setup the carousels
+			// -------------------------------------------------------------
+			// Prodigy carousel
+			// -------------------------------------------------------------
+			console.log('Setup Prodigy carousel');
+			params = {
+			    name : "prodigy",
+				caption : "Prodigy Moments After",
+				mainImg : "images/prodigy/main.jpg",
+				alist : [ {
+					img : "images/prodigy/details1.jpg",
+					alt : "Detail of Prodigy Moments After"
+				}, {
+					img : "images/prodigy/details2.jpg",
+					alt : "Detail of Prodigy Moments After"
+				}, {
+					img : "images/prodigy/details3.jpg",
+					alt : "Detail of Prodigy Moments After"
+				}, {
+					img : "images/prodigy/details4.jpg",
+					alt : "Detail of Prodigy Moments After"
+				}, {
+					img : "images/prodigy/details5.jpg",
+					alt : "Detail of Prodigy Moments After"
+				}, {
+					img : "images/prodigy/details6.jpg",
+					alt : "Detail of Prodigy Moments After"
+				}, {
+					img : "images/prodigy/details7.jpg",
+					alt : "Detail of Prodigy Moments After"
+				}, {
+					img : "images/prodigy/details8.jpg",
+					alt : "Detail of Prodigy Moments After"
+				}, {
+					img : "images/prodigy/details9.jpg",
+					alt : "Detail of Prodigy Moments After"
+				}, {
+					img : "images/prodigy/details10.jpg",
+					alt : "Detail of Prodigy Moments After"
+				}, {
+					img : "images/prodigy/details11.jpg",
+					alt : "Detail of Prodigy Moments After"
+				}, {
+					img : "images/prodigy/details12.jpg",
+					alt : "Detail of Prodigy Moments After"
+				}, ]
+			};
+			$("#prodigy").html(app.carouselTpl(params));
+			$('#prodigy').on('slid.bs.carousel', function(e) {
+				lazyContainer(e);
+			});
+			
 			// -------------------------------------------------------------
 			// Yanomami carousel
 			// -------------------------------------------------------------
@@ -936,6 +1000,30 @@ var app = {
 			};
 			$("#homecoming").html(app.carouselTpl(params));
 			$('#homecoming').on('slid.bs.carousel', function(e) {
+				lazyContainer(e);
+			});
+			
+			
+			// -------------------------------------------------------------
+			// Turtle carousel
+			// -------------------------------------------------------------
+			params = {
+			    name : "turtle",
+				caption : "Turtle",
+				mainImg : "images/turtle/main.jpg",
+				alist : [ {
+					img : "images/turtle/details1.jpg",
+					alt : "Detail of Turtle"
+				}, {
+					img : "images/turtle/details2.jpg",
+					alt : "Detail of Turtle"
+				}, {
+					img : "images/turtle/details3.jpg",
+					alt : "Detail of Turtle"
+				}, ]
+			};
+			$("#turtle").html(app.carouselTpl(params));
+			$('#turtle').on('slid.bs.carousel', function(e) {
 				lazyContainer(e);
 			});
 			
