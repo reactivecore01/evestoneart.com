@@ -198,10 +198,10 @@ var app = {
 				}, {
 					name: "turtle",
 					img : "images/turtle/main.jpg",
-					title : "Turtle",
+					title : "After The Beach",
 					medium : 'Pastel on paper. 18"x24"',
 					horizontal: "true",
-					soldTo : "sold to Private Collector"
+					soldTo : "sold to Katherine Garvey"
 				}, {
 					name: "caracals",
 					img : "images/caracals/main.jpg",
@@ -1009,17 +1009,17 @@ var app = {
 			// -------------------------------------------------------------
 			params = {
 			    name : "turtle",
-				caption : "Turtle",
+				caption : "After The Beach",
 				mainImg : "images/turtle/main.jpg",
 				alist : [ {
 					img : "images/turtle/details1.jpg",
-					alt : "Detail of Turtle"
+					alt : "Detail of After The Beach"
 				}, {
 					img : "images/turtle/details2.jpg",
-					alt : "Detail of Turtle"
+					alt : "Detail of After The Beach"
 				}, {
 					img : "images/turtle/details3.jpg",
-					alt : "Detail of Turtle"
+					alt : "Detail of After The Beach"
 				}, ]
 			};
 			$("#turtle").html(app.carouselTpl(params));
